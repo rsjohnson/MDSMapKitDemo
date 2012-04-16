@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940E096515162715003D4144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E096415162715003D4144 /* UIKit.framework */; };
+		940E096715162715003D4144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E096615162715003D4144 /* Foundation.framework */; };
+		940E096915162715003D4144 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E096815162715003D4144 /* CoreGraphics.framework */; };
+		940E096F15162715003D4144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 940E096D15162715003D4144 /* InfoPlist.strings */; };
+		940E097115162715003D4144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E097015162715003D4144 /* main.m */; };
+		940E097515162715003D4144 /* MDSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E097415162715003D4144 /* MDSAppDelegate.m */; };
+		940E097815162715003D4144 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940E097615162715003D4144 /* MainStoryboard.storyboard */; };
+		940E097B15162715003D4144 /* MDSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E097A15162715003D4144 /* MDSViewController.m */; };
+		940E098515162836003D4144 /* MDSGeocodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E098415162836003D4144 /* MDSGeocodingViewController.m */; };
+		940E098715162846003D4144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E098615162846003D4144 /* CoreLocation.framework */; };
+		940E098915162853003D4144 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E098815162853003D4144 /* MapKit.framework */; };
+		940E098B151643C4003D4144 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E098A151643C4003D4144 /* AddressBookUI.framework */; };
+		940E098F15166596003D4144 /* MDSLocationBasicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E098E15166596003D4144 /* MDSLocationBasicsViewController.m */; };
+		943BA28C1537660800DF2F7C /* MDSCustomOverlaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943BA28B1537660800DF2F7C /* MDSCustomOverlaysViewController.m */; };
+		943BA29A1537712400DF2F7C /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 943BA2971537712400DF2F7C /* TileOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		943BA29B1537712400DF2F7C /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 943BA2991537712400DF2F7C /* TileOverlayView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		943BA29D1537713100DF2F7C /* IR in Resources */ = {isa = PBXBuildFile; fileRef = 943BA29C1537713100DF2F7C /* IR */; };
+		946F184315334541001EF838 /* MDSOverlayDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F184215334541001EF838 /* MDSOverlayDisplayViewController.m */; };
+		946F184515334AFF001EF838 /* polyline.json in Resources */ = {isa = PBXBuildFile; fileRef = 946F184415334AFF001EF838 /* polyline.json */; };
+		946F1847153351B5001EF838 /* minnesota.json in Resources */ = {isa = PBXBuildFile; fileRef = 946F1846153351B5001EF838 /* minnesota.json */; };
+		948337821532075F004A7A60 /* MDSEarthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = 948337811532075F004A7A60 /* MDSEarthquake.m */; };
+		9483378515320B8B004A7A60 /* MDSEarthquakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9483378415320B8B004A7A60 /* MDSEarthquakeViewController.m */; };
+		9483378715325C36004A7A60 /* earthquakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9483378615325C36004A7A60 /* earthquakes.json */; };
+		9483378F15333A99004A7A60 /* mag4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378915333A99004A7A60 /* mag4.png */; };
+		9483379015333A99004A7A60 /* mag4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378A15333A99004A7A60 /* mag4@2x.png */; };
+		9483379115333A99004A7A60 /* mag5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378B15333A99004A7A60 /* mag5.png */; };
+		9483379215333A99004A7A60 /* mag5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378C15333A99004A7A60 /* mag5@2x.png */; };
+		9483379315333A99004A7A60 /* mag6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378D15333A99004A7A60 /* mag6.png */; };
+		9483379415333A99004A7A60 /* mag6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483378E15333A99004A7A60 /* mag6@2x.png */; };
+		9483379715333B6A004A7A60 /* mag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483379515333B6A004A7A60 /* mag2.png */; };
+		9483379815333B6A004A7A60 /* mag2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483379615333B6A004A7A60 /* mag2@2x.png */; };
+		9483379B15333B88004A7A60 /* mag3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483379915333B88004A7A60 /* mag3.png */; };
+		9483379C15333B88004A7A60 /* mag3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9483379A15333B88004A7A60 /* mag3@2x.png */; };
+		94F9E5AB151788E1006ED749 /* fells_loop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 94F9E5AA151788E1006ED749 /* fells_loop.gpx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		940E096015162715003D4144 /* mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		940E096415162715003D4144 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		940E096615162715003D4144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		940E096815162715003D4144 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		940E096C15162715003D4144 /* mapkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mapkit-Info.plist"; sourceTree = "<group>"; };
+		940E096E15162715003D4144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		940E097015162715003D4144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		940E097215162715003D4144 /* mapkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapkit-Prefix.pch"; sourceTree = "<group>"; };
+		940E097315162715003D4144 /* MDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSAppDelegate.h; sourceTree = "<group>"; };
+		940E097415162715003D4144 /* MDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSAppDelegate.m; sourceTree = "<group>"; };
+		940E097715162715003D4144 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		940E097915162715003D4144 /* MDSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSViewController.h; sourceTree = "<group>"; };
+		940E097A15162715003D4144 /* MDSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSViewController.m; sourceTree = "<group>"; };
+		940E098315162836003D4144 /* MDSGeocodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSGeocodingViewController.h; path = Geocoding/MDSGeocodingViewController.h; sourceTree = "<group>"; };
+		940E098415162836003D4144 /* MDSGeocodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSGeocodingViewController.m; path = Geocoding/MDSGeocodingViewController.m; sourceTree = "<group>"; };
+		940E098615162846003D4144 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		940E098815162853003D4144 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		940E098A151643C4003D4144 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		940E098D15166596003D4144 /* MDSLocationBasicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSLocationBasicsViewController.h; path = "Location Basics/MDSLocationBasicsViewController.h"; sourceTree = "<group>"; };
+		940E098E15166596003D4144 /* MDSLocationBasicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSLocationBasicsViewController.m; path = "Location Basics/MDSLocationBasicsViewController.m"; sourceTree = "<group>"; };
+		943BA28A1537660800DF2F7C /* MDSCustomOverlaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSCustomOverlaysViewController.h; sourceTree = "<group>"; };
+		943BA28B1537660800DF2F7C /* MDSCustomOverlaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSCustomOverlaysViewController.m; sourceTree = "<group>"; };
+		943BA2961537712400DF2F7C /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
+		943BA2971537712400DF2F7C /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
+		943BA2981537712400DF2F7C /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
+		943BA2991537712400DF2F7C /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
+		943BA29C1537713100DF2F7C /* IR */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IR; sourceTree = "<group>"; };
+		943BA29E15379EE800DF2F7C /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		946F184115334541001EF838 /* MDSOverlayDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSOverlayDisplayViewController.h; path = mapkit/Overlay/MDSOverlayDisplayViewController.h; sourceTree = SOURCE_ROOT; };
+		946F184215334541001EF838 /* MDSOverlayDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSOverlayDisplayViewController.m; path = mapkit/Overlay/MDSOverlayDisplayViewController.m; sourceTree = SOURCE_ROOT; };
+		946F184415334AFF001EF838 /* polyline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = polyline.json; path = mapkit/Overlay/polyline.json; sourceTree = SOURCE_ROOT; };
+		946F1846153351B5001EF838 /* minnesota.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = minnesota.json; path = mapkit/Overlay/minnesota.json; sourceTree = SOURCE_ROOT; };
+		948337801532075F004A7A60 /* MDSEarthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSEarthquake.h; path = ../Earthquakes/MDSEarthquake.h; sourceTree = "<group>"; };
+		948337811532075F004A7A60 /* MDSEarthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSEarthquake.m; path = ../Earthquakes/MDSEarthquake.m; sourceTree = "<group>"; };
+		9483378315320B8B004A7A60 /* MDSEarthquakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSEarthquakeViewController.h; path = ../Earthquakes/MDSEarthquakeViewController.h; sourceTree = "<group>"; };
+		9483378415320B8B004A7A60 /* MDSEarthquakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSEarthquakeViewController.m; path = ../Earthquakes/MDSEarthquakeViewController.m; sourceTree = "<group>"; };
+		9483378615325C36004A7A60 /* earthquakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = earthquakes.json; path = ../Earthquakes/earthquakes.json; sourceTree = "<group>"; };
+		9483378915333A99004A7A60 /* mag4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mag4.png; path = ../Earthquakes/mag4.png; sourceTree = "<group>"; };
+		9483378A15333A99004A7A60 /* mag4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mag4@2x.png"; path = "../Earthquakes/mag4@2x.png"; sourceTree = "<group>"; };
+		9483378B15333A99004A7A60 /* mag5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mag5.png; path = ../Earthquakes/mag5.png; sourceTree = "<group>"; };
+		9483378C15333A99004A7A60 /* mag5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mag5@2x.png"; path = "../Earthquakes/mag5@2x.png"; sourceTree = "<group>"; };
+		9483378D15333A99004A7A60 /* mag6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mag6.png; path = ../Earthquakes/mag6.png; sourceTree = "<group>"; };
+		9483378E15333A99004A7A60 /* mag6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mag6@2x.png"; path = "../Earthquakes/mag6@2x.png"; sourceTree = "<group>"; };
+		9483379515333B6A004A7A60 /* mag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mag2.png; path = ../Earthquakes/mag2.png; sourceTree = "<group>"; };
+		9483379615333B6A004A7A60 /* mag2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mag2@2x.png"; path = "../Earthquakes/mag2@2x.png"; sourceTree = "<group>"; };
+		9483379915333B88004A7A60 /* mag3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mag3.png; path = ../Earthquakes/mag3.png; sourceTree = "<group>"; };
+		9483379A15333B88004A7A60 /* mag3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mag3@2x.png"; path = "../Earthquakes/mag3@2x.png"; sourceTree = "<group>"; };
+		94B28BFA15223A6100CBE087 /* WashingtonDC.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WashingtonDC.gpx; sourceTree = "<group>"; };
+		94F9E5AA151788E1006ED749 /* fells_loop.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = fells_loop.gpx; path = "Location Basics/fells_loop.gpx"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		940E095D15162715003D4144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940E098B151643C4003D4144 /* AddressBookUI.framework in Frameworks */,
+				940E098915162853003D4144 /* MapKit.framework in Frameworks */,
+				940E098715162846003D4144 /* CoreLocation.framework in Frameworks */,
+				940E096515162715003D4144 /* UIKit.framework in Frameworks */,
+				940E096715162715003D4144 /* Foundation.framework in Frameworks */,
+				940E096915162715003D4144 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		940E095515162715003D4144 = {
+			isa = PBXGroup;
+			children = (
+				940E096A15162715003D4144 /* mapkit */,
+				940E096315162715003D4144 /* Frameworks */,
+				940E096115162715003D4144 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		940E096115162715003D4144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940E096015162715003D4144 /* mapkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		940E096315162715003D4144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940E098A151643C4003D4144 /* AddressBookUI.framework */,
+				940E098815162853003D4144 /* MapKit.framework */,
+				940E098615162846003D4144 /* CoreLocation.framework */,
+				940E096415162715003D4144 /* UIKit.framework */,
+				940E096615162715003D4144 /* Foundation.framework */,
+				940E096815162715003D4144 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		940E096A15162715003D4144 /* mapkit */ = {
+			isa = PBXGroup;
+			children = (
+				940E0981151627A6003D4144 /* Core Location Demos */,
+				94F9E5AB151788E1006ED74A /* MapKit Demos */,
+				940E097315162715003D4144 /* MDSAppDelegate.h */,
+				940E097415162715003D4144 /* MDSAppDelegate.m */,
+				940E097615162715003D4144 /* MainStoryboard.storyboard */,
+				940E097915162715003D4144 /* MDSViewController.h */,
+				940E097A15162715003D4144 /* MDSViewController.m */,
+				940E096B15162715003D4144 /* Supporting Files */,
+			);
+			path = mapkit;
+			sourceTree = "<group>";
+		};
+		940E096B15162715003D4144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				940E096C15162715003D4144 /* mapkit-Info.plist */,
+				940E096D15162715003D4144 /* InfoPlist.strings */,
+				940E097015162715003D4144 /* main.m */,
+				940E097215162715003D4144 /* mapkit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		940E0981151627A6003D4144 /* Core Location Demos */ = {
+			isa = PBXGroup;
+			children = (
+				940E098C151664E5003D4144 /* Basics+Location Simulation */,
+				940E0982151627F3003D4144 /* Geocoding */,
+			);
+			name = "Core Location Demos";
+			sourceTree = "<group>";
+		};
+		940E0982151627F3003D4144 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				940E098315162836003D4144 /* MDSGeocodingViewController.h */,
+				940E098415162836003D4144 /* MDSGeocodingViewController.m */,
+			);
+			name = Geocoding;
+			sourceTree = "<group>";
+		};
+		940E098C151664E5003D4144 /* Basics+Location Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				94F9E5AA151788E1006ED749 /* fells_loop.gpx */,
+				940E098D15166596003D4144 /* MDSLocationBasicsViewController.h */,
+				940E098E15166596003D4144 /* MDSLocationBasicsViewController.m */,
+				94B28BFA15223A6100CBE087 /* WashingtonDC.gpx */,
+				943BA29E15379EE800DF2F7C /* Location.gpx */,
+			);
+			name = "Basics+Location Simulation";
+			sourceTree = "<group>";
+		};
+		943BA289153765F400DF2F7C /* Overlays Custom */ = {
+			isa = PBXGroup;
+			children = (
+				943BA29C1537713100DF2F7C /* IR */,
+				943BA2961537712400DF2F7C /* TileOverlay.h */,
+				943BA2971537712400DF2F7C /* TileOverlay.m */,
+				943BA2981537712400DF2F7C /* TileOverlayView.h */,
+				943BA2991537712400DF2F7C /* TileOverlayView.m */,
+				943BA28A1537660800DF2F7C /* MDSCustomOverlaysViewController.h */,
+				943BA28B1537660800DF2F7C /* MDSCustomOverlaysViewController.m */,
+			);
+			name = "Overlays Custom";
+			sourceTree = "<group>";
+		};
+		948337771530ED2C004A7A60 /* Overlays Basic */ = {
+			isa = PBXGroup;
+			children = (
+				946F1846153351B5001EF838 /* minnesota.json */,
+				946F184415334AFF001EF838 /* polyline.json */,
+				946F184115334541001EF838 /* MDSOverlayDisplayViewController.h */,
+				946F184215334541001EF838 /* MDSOverlayDisplayViewController.m */,
+			);
+			name = "Overlays Basic";
+			sourceTree = "<group>";
+		};
+		9483377C15320619004A7A60 /* Annoations - Earthquakes */ = {
+			isa = PBXGroup;
+			children = (
+				9483378815333A8C004A7A60 /* Annoation Images */,
+				9483378615325C36004A7A60 /* earthquakes.json */,
+				948337801532075F004A7A60 /* MDSEarthquake.h */,
+				948337811532075F004A7A60 /* MDSEarthquake.m */,
+				9483378315320B8B004A7A60 /* MDSEarthquakeViewController.h */,
+				9483378415320B8B004A7A60 /* MDSEarthquakeViewController.m */,
+			);
+			name = "Annoations - Earthquakes";
+			sourceTree = "<group>";
+		};
+		9483378815333A8C004A7A60 /* Annoation Images */ = {
+			isa = PBXGroup;
+			children = (
+				9483379515333B6A004A7A60 /* mag2.png */,
+				9483379615333B6A004A7A60 /* mag2@2x.png */,
+				9483379915333B88004A7A60 /* mag3.png */,
+				9483379A15333B88004A7A60 /* mag3@2x.png */,
+				9483378915333A99004A7A60 /* mag4.png */,
+				9483378A15333A99004A7A60 /* mag4@2x.png */,
+				9483378B15333A99004A7A60 /* mag5.png */,
+				9483378C15333A99004A7A60 /* mag5@2x.png */,
+				9483378D15333A99004A7A60 /* mag6.png */,
+				9483378E15333A99004A7A60 /* mag6@2x.png */,
+			);
+			name = "Annoation Images";
+			sourceTree = "<group>";
+		};
+		94F9E5AB151788E1006ED74A /* MapKit Demos */ = {
+			isa = PBXGroup;
+			children = (
+				943BA289153765F400DF2F7C /* Overlays Custom */,
+				948337771530ED2C004A7A60 /* Overlays Basic */,
+				9483377C15320619004A7A60 /* Annoations - Earthquakes */,
+			);
+			path = "MapKit Demos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		940E095F15162715003D4144 /* mapkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940E097E15162715003D4144 /* Build configuration list for PBXNativeTarget "mapkit" */;
+			buildPhases = (
+				940E095C15162715003D4144 /* Sources */,
+				940E095D15162715003D4144 /* Frameworks */,
+				940E095E15162715003D4144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mapkit;
+			productName = mapkit;
+			productReference = 940E096015162715003D4144 /* mapkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		940E095715162715003D4144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MDS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "mobile data solutions";
+			};
+			buildConfigurationList = 940E095A15162715003D4144 /* Build configuration list for PBXProject "MapKit Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 940E095515162715003D4144;
+			productRefGroup = 940E096115162715003D4144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				940E095F15162715003D4144 /* mapkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		940E095E15162715003D4144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940E096F15162715003D4144 /* InfoPlist.strings in Resources */,
+				940E097815162715003D4144 /* MainStoryboard.storyboard in Resources */,
+				94F9E5AB151788E1006ED749 /* fells_loop.gpx in Resources */,
+				9483378715325C36004A7A60 /* earthquakes.json in Resources */,
+				9483378F15333A99004A7A60 /* mag4.png in Resources */,
+				9483379015333A99004A7A60 /* mag4@2x.png in Resources */,
+				9483379115333A99004A7A60 /* mag5.png in Resources */,
+				9483379215333A99004A7A60 /* mag5@2x.png in Resources */,
+				9483379315333A99004A7A60 /* mag6.png in Resources */,
+				9483379415333A99004A7A60 /* mag6@2x.png in Resources */,
+				9483379715333B6A004A7A60 /* mag2.png in Resources */,
+				9483379815333B6A004A7A60 /* mag2@2x.png in Resources */,
+				9483379B15333B88004A7A60 /* mag3.png in Resources */,
+				9483379C15333B88004A7A60 /* mag3@2x.png in Resources */,
+				946F184515334AFF001EF838 /* polyline.json in Resources */,
+				946F1847153351B5001EF838 /* minnesota.json in Resources */,
+				943BA29D1537713100DF2F7C /* IR in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		940E095C15162715003D4144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940E097115162715003D4144 /* main.m in Sources */,
+				940E097515162715003D4144 /* MDSAppDelegate.m in Sources */,
+				940E097B15162715003D4144 /* MDSViewController.m in Sources */,
+				940E098515162836003D4144 /* MDSGeocodingViewController.m in Sources */,
+				940E098F15166596003D4144 /* MDSLocationBasicsViewController.m in Sources */,
+				948337821532075F004A7A60 /* MDSEarthquake.m in Sources */,
+				9483378515320B8B004A7A60 /* MDSEarthquakeViewController.m in Sources */,
+				946F184315334541001EF838 /* MDSOverlayDisplayViewController.m in Sources */,
+				943BA28C1537660800DF2F7C /* MDSCustomOverlaysViewController.m in Sources */,
+				943BA29A1537712400DF2F7C /* TileOverlay.m in Sources */,
+				943BA29B1537712400DF2F7C /* TileOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		940E096D15162715003D4144 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				940E096E15162715003D4144 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		940E097615162715003D4144 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				940E097715162715003D4144 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		940E097C15162715003D4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		940E097D15162715003D4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		940E097F15162715003D4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapkit/mapkit-Prefix.pch";
+				INFOPLIST_FILE = "mapkit/mapkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		940E098015162715003D4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapkit/mapkit-Prefix.pch";
+				INFOPLIST_FILE = "mapkit/mapkit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		940E095A15162715003D4144 /* Build configuration list for PBXProject "MapKit Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940E097C15162715003D4144 /* Debug */,
+				940E097D15162715003D4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940E097E15162715003D4144 /* Build configuration list for PBXNativeTarget "mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940E097F15162715003D4144 /* Debug */,
+				940E098015162715003D4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 940E095715162715003D4144 /* Project object */;
+}

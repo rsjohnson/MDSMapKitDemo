@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iPy-Kc-SuS">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="KAJ-HV-0es">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ky3-bC-Br5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="iPy-Kc-SuS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h72-Nh-Sbu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yjy-bk-p0f" kind="relationship" relationship="rootViewController" id="2ZX-cj-X0E"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="173" y="182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3fL-hg-f30">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8a-hf-qgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Yjy-bk-p0f" customClass="MDSViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cC6-Mi-36f">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Core Location" id="ITe-96-ljt">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yLr-bC-wqO">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Basics + Location Simulation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6bK-bk-sze">
+                                                    <rect key="frame" x="20" y="11" width="221" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="rgP-18-NN0" kind="push" id="UBg-YZ-B5r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YMo-4f-THt">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Geocoding" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bKX-SC-yUP">
+                                                    <rect key="frame" x="20" y="11" width="84" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="OLM-3P-T42" kind="push" id="Xsd-9R-BeE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Map Kit" id="ieq-3B-DCj">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rYZ-ZU-4kn">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Annotations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5W9-FT-CzA">
+                                                    <rect key="frame" x="20" y="11" width="92" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="yIu-o7-Euc" kind="push" id="sGg-Ux-eG7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="n5S-hF-dGf">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overlays Basic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="puG-Ye-u9H">
+                                                    <rect key="frame" x="20" y="11" width="114" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="acK-fC-LIi" kind="push" id="XMC-lg-R8X"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hty-E7-lal">
+                                        <rect key="frame" x="0.0" y="220" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Custom Overlays" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="PdQ-xI-M7X">
+                                                    <rect key="frame" x="20" y="11" width="131" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="YI6-tS-vPb" kind="push" id="9UH-43-Xpd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Yjy-bk-p0f" id="R82-vN-OhS"/>
+                            <outlet property="delegate" destination="Yjy-bk-p0f" id="cwA-Pz-HNj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="W3h-YW-Dib"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="562" y="187"/>
+        </scene>
+        <!--Location Basics View Controller-->
+        <scene sceneID="PFF-WZ-I4S">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vP9-g3-rmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rgP-18-NN0" customClass="MDSLocationBasicsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zeA-F3-SOV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="OJo-f8-eTG">
+                                <rect key="frame" x="0.0" y="-9" width="320" height="366"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rgP-18-NN0" id="Dak-jO-6Ta"/>
+                                </connections>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="N1Y-Ad-tk8">
+                                <rect key="frame" x="0.0" y="354" width="320" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="heo-CY-89o"/>
+                    <connections>
+                        <outlet property="_locationLog" destination="N1Y-Ad-tk8" id="yPu-kU-fE0"/>
+                        <outlet property="_mapView" destination="OJo-f8-eTG" id="OnO-1f-0HO"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-907"/>
+        </scene>
+        <!--Geocoding View Controller-->
+        <scene sceneID="N7S-xY-tgK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1J-dw-OcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OLM-3P-T42" customClass="MDSGeocodingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDR-bs-zdY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" id="PrW-ak-S0p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OLM-3P-T42" id="qOf-As-hYN"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" id="iG0-Z7-C8J">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2eZ-kA-pu5" appends="YES" id="IDf-n9-Q63"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6hZ-HX-9x4"/>
+                    <connections>
+                        <outlet property="_mapView" destination="iG0-Z7-C8J" id="rdH-Gn-dqE"/>
+                        <outlet property="searchDisplayController" destination="VJm-bY-ABl" id="Ow5-vl-sv3"/>
+                    </connections>
+                </viewController>
+                <searchDisplayController id="VJm-bY-ABl">
+                    <connections>
+                        <outlet property="delegate" destination="OLM-3P-T42" id="WPC-2M-YjC"/>
+                        <outlet property="searchBar" destination="PrW-ak-S0p" id="ZVZ-We-zWY"/>
+                        <outlet property="searchContentsController" destination="OLM-3P-T42" id="q2z-VP-qoQ"/>
+                        <outlet property="searchResultsDataSource" destination="OLM-3P-T42" id="cNI-Fj-JkH"/>
+                        <outlet property="searchResultsDelegate" destination="OLM-3P-T42" id="zc9-o3-Wi6"/>
+                    </connections>
+                </searchDisplayController>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="2eZ-kA-pu5">
+                    <connections>
+                        <action selector="didLongPress:" destination="OLM-3P-T42" id="dQf-OQ-EGP"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-313"/>
+        </scene>
+        <!--Earthquake View Controller - Earthquakes-->
+        <scene sceneID="fX3-Tr-5CC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtE-07-4Zw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Earthquakes" id="yIu-o7-Euc" customClass="MDSEarthquakeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Drp-OU-O6A">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" id="XX1-dC-ZRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yIu-o7-Euc" id="6Xe-Pt-XSD"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uFE-jY-X9P"/>
+                    <connections>
+                        <outlet property="_mapView" destination="XX1-dC-ZRQ" id="lXM-Dd-etQ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1164" y="282"/>
+        </scene>
+        <!--Custom Overlays View Controller-->
+        <scene sceneID="upk-24-egW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smg-wm-hYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="YI6-tS-vPb" customClass="MDSCustomOverlaysViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q94-rd-XLM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="lYv-SZ-EvT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YI6-tS-vPb" id="3sI-v5-pt8"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Je-rR-Z44"/>
+                    <connections>
+                        <outlet property="_mapView" destination="lYv-SZ-EvT" id="jY4-cb-cIZ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1172" y="1477"/>
+        </scene>
+        <!--Overlay Display View Controller-->
+        <scene sceneID="zn5-KL-kSJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvJ-yd-8t9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="acK-fC-LIi" customClass="MDSOverlayDisplayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cz8-vl-HqI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="iAB-cR-ozb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="acK-fC-LIi" id="Uh2-w9-qVY"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ZK-4h-T9J">
+                        <barButtonItem key="rightBarButtonItem" title="Overlay" id="e3X-Za-o1s">
+                            <connections>
+                                <action selector="showOverlaySelectionAlert:" destination="acK-fC-LIi" id="7FJ-Te-eMw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_mapView" destination="iAB-cR-ozb" id="Mv6-Vm-cK8"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1168" y="862"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
